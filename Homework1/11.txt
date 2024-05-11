@@ -1,0 +1,54 @@
+from PIL import Image
+image = Image.open('elain1.bmp')
+image.show()
+image.save('1.jpg')
+print(image.mode, image.size, image.format)
+# RGB (481, 321) JPEG
+
+
+lena7=lena/2;
+lena6=lena/4;
+lena5=lena/8;
+lena4=lena/16;
+lena3=lena/32;
+lena2=lena/64;
+lena1=lena/128;
+
+lena1.save('lena1.jpg');
+lena2.save('lena2.jpg');
+lena3.save('lena3.jpg');
+lena4.save('lena4.jpg');
+lena5.save('lena5.jpg');
+lena6.save('lena6.jpg');
+lena7.save('lena7.jpg');
+
+
+
+def reduce_intensity_levels(img, level):
+    img = cv2.copyTo(img, None)
+    for x in range(img.shape[0]):
+        for y in range(img.shape[1]):
+            si = img[x, y]
+            ni = int(level * si / 255 + 0.5) * (255 / level)
+            img[x, y] = ni
+    return img
+
+
+reduce_intensity_levels(lena,3);
+
+
+
+from PIL import Image
+import numpy
+import cv2
+from numpy import array
+
+lena = Image.open('lena.bmp')
+lena.save('lena.jpg')
+
+image=array(Image.open(r'lena.jpg'))
+image7=Image.fromarray(image/2);
+image7.show()
+
+#lena.show();
+
