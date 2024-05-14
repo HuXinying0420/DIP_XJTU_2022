@@ -1,4 +1,3 @@
-# DigitalImageProcess_XJTU_2022
 # DIP_XJTU_2022
 
 This repository contains assignments from the Digital Image and Video Processing course at Xi'an Jiaotong University for the year 2022. Each assignment covers different techniques and algorithms in image processing.
