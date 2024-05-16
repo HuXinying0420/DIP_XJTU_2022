@@ -51,6 +51,12 @@ Given two images (Image A and Image B), randomly select 7 points in each image, 
    - Add Gaussian noise to the blurred Lena image (mean=0, variance=10 pixels) to create a blurred noisy image.
    - Restore the image using Eq. (5.8-6) and (5.9-4) respectively, and analyze the advantages and disadvantages of the algorithms.
 
+## Disclaimer
+
+This repository is intended for personal academic use and reference. It is recommended to understand and work through the materials independently before referring to the provided solutions. 
+
+Feel free to explore the content and reach out if you have any questions!
+
 <!--
 
 
